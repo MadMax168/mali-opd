@@ -42,7 +42,7 @@ function TabsList({ className, ...props }: React.ComponentProps<"div">) {
 	return (
 		<div
 			className={cn(
-				"inline-flex h-9 items-center justify-center rounded-lg bg-muted p-1 text-muted-foreground",
+				"inline-flex items-center gap-0 border-border border-b",
 				className
 			)}
 			role="tablist"
@@ -67,10 +67,10 @@ function TabsTrigger({
 		<button
 			aria-selected={isActive}
 			className={cn(
-				"inline-flex items-center justify-center whitespace-nowrap rounded-md px-3 py-1 font-medium text-sm ring-offset-background transition-all focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50",
+				"-mb-px inline-flex items-center justify-center whitespace-nowrap border-b-2 px-4 py-2 font-medium text-sm transition-all focus-visible:outline-none disabled:pointer-events-none disabled:opacity-50",
 				isActive
-					? "bg-background text-foreground shadow"
-					: "hover:bg-background/50 hover:text-foreground",
+					? "border-foreground text-foreground"
+					: "border-transparent text-muted-foreground hover:text-foreground",
 				className
 			)}
 			data-state={isActive ? "active" : "inactive"}
