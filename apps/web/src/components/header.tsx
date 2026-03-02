@@ -8,13 +8,13 @@ export default function Header() {
 		<header className="flex h-14 items-center justify-between gap-4 border-border border-b bg-background px-5">
 			<div className="flex items-center gap-2">
 				<span
-					className="font-extrabold text-lg text-teal-600 tracking-tight"
+					className="font-extrabold text-lg text-primary tracking-tight"
 					style={{ fontFamily: "var(--font-syne)" }}
 				>
 					MALI
 				</span>
 				<span className="mt-1 font-light text-muted-foreground text-xs">
-					Ambient Clinical Intelligence v0.2
+					Ambient Clinical Intelligence
 				</span>
 				{MOCKUP_MODE && (
 					<Badge className="text-xs" variant="outline">

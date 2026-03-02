@@ -62,9 +62,9 @@ export default function RootLayout({
 				className={`${ibmPlexSansThai.variable} ${geistMono.variable} ${syne.variable} antialiased`}
 			>
 				<Providers>
-					<div className="grid h-svh grid-rows-[auto_1fr] overflow-hidden">
+					<div className="grid h-svh grid-rows-[auto_1fr]">
 						<Header />
-						<main className="h-full min-h-0 overflow-hidden">{children}</main>
+						<main className="h-full min-h-0">{children}</main>
 					</div>
 				</Providers>
 			</body>
